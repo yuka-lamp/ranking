@@ -16,7 +16,6 @@ $shoot = get_field('shoot');
 $costume = get_field('costume');
 $interior = get_field('interior');
 $freedom = get_field('freedom');
-$graf = get_field('graf');
 ?>
 <article id="post-<?php the_id(); ?>" <?php post_class(); ?> itemscope="itemscope" itemtype="http://schema.org/BlogPosting">
 <header class="post-header">
@@ -39,8 +38,36 @@ $graf = get_field('graf');
 
 <!-- 内容 -->
 <section class="post-content" itemprop="text">
-<h3 class="top-ttl3">評価<span class="top-ttl3-span">- evaluation -</span></h3>
-<div class="studio-graf"><img src="<?php echo $graf; ?>" alt="<?php echo $name; ?>グラフ"></div>
+<div class="top-ttl-wrap">
+<h3 class="top-ttl3">Eevaluation</h3>
+<p class="top-ttl3-sub">評価</p>
+</div>
+
+<div class="">
+  <table>
+    <tr>
+      <th><?php echo get_field('evaluation_01',120);?></th>
+      <td><?php echo get_field('score1');?></td>
+    </tr>
+    <tr>
+      <th><?php echo get_field('evaluation_02',120);?></th>
+      <td><?php echo get_field('score2');?></td>
+    </tr>
+    <tr>
+      <th><?php echo get_field('evaluation_03',120);?></th>
+      <td><?php echo get_field('score3');?></td>
+    </tr>
+    <tr>
+      <th><?php echo get_field('evaluation_04',120);?></th>
+      <td><?php echo get_field('score4');?></td>
+    </tr>
+    <tr>
+      <th><?php echo get_field('evaluation_05',120);?></th>
+      <td><?php echo get_field('score5');?></td>
+    </tr>
+  </table>
+</div>
+
 <div class="hyouka"><?php echo $intro; ?></div>
 <div class="url btn-arare">
 <a href="<?php echo $site_url; ?>" target="_blank" rel="nofollow">公式サイトを見る</a>

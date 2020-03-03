@@ -680,10 +680,10 @@ form input[type='submit']:hover, form button:hover {
 }
 
 .top-ttl3 {
-  margin: 3rem auto 0 auto;
+  margin: 3rem auto 0 auto!important;
   font-size: 1.5rem;
   box-sizing: border-box;
-  padding: 1rem 0 0 0;
+  padding: 1rem 0 0 0!important;
   text-align: left;
   text-transform: uppercase;
   text-align: center;

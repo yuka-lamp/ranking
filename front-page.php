@@ -5,7 +5,7 @@ Template Name: トップページ
 ?>
 <div id="content">
 <div id="main_posts">
-<?php echo get_the_post_thumbnail(265); ?>
+<?php the_post_thumbnail('large'); ?>
 </div>
 <div id="wrapper" class="wrap pa30">
 <div id="main">
