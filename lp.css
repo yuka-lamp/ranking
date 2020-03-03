@@ -1,0 +1,22 @@
+@charset "UTF-8";
+.lp-wrap {
+    width: 1200px;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+@media screen and (max-width: 1200px) {
+  .lp-wrap {
+    width: auto;
+    margin: 0 36px;
+  }
+}
+@media screen and (max-width: 991px) {
+  .lp-wrap {
+    margin: 0 24px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .lp-wrap {
+    margin: 0 12px;
+  }
+}
