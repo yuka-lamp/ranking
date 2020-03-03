@@ -38,7 +38,7 @@ body {
 }
 
 #side {
-  width: 310px;
+  width: 300px;
   float: left;
   margin-left: -310px
 }
@@ -179,7 +179,7 @@ form input[type='submit']:hover, form button:hover {
 }
 
 #header #logo {
-  float: left;
+  text-align: center;
   font-size: 18px;
   padding: 20px 0
 }
@@ -194,7 +194,6 @@ form input[type='submit']:hover, form button:hover {
 }
 
 #header #logo h1 {
-  margin-left: 25px;
   display: inline-block;
 }
 
@@ -255,7 +254,7 @@ form input[type='submit']:hover, form button:hover {
   display: block;
   padding: 15px 20px;
   line-height: 28px;
-  color: #414141;
+  color: #fff;
   text-decoration: none;
   -webkit-transition: background .3s ease-in-out;
   transition: background .3s ease-in-out
@@ -656,50 +655,45 @@ form input[type='submit']:hover, form button:hover {
 #top-cap {
   text-align: center;
   overflow: hidden;
-  padding: 60px 20px;
+  padding: 20px;
+}
+
+.about {
+  padding: 4rem 2rem;
+  margin: 0 0 2rem 0;
+  border-radius: 10px
+}
+
+@media screen and (max-width:767px) {
+  .about {
+    padding: 2rem;
+  }
 }
 
 .top-ttl2 {
   position: relative;
   text-align: center;
-  margin-bottom: 60px;
-}
-
-.top-ttl2 span::before {
-  top: -40px;
-  left: -55px;
-  content: url('./lib/images/arare/title-1.png');
-}
-
-.top-ttl2 span::after {
-  top: -60px;
-  content: url('./lib/images/arare/title-2.png');
-}
-
-.top-ttl2 span::before, .top-ttl2 span::after {
-  display: inline-block;
-  position: absolute;
-  vertical-align: middle;
-  -webkit-transform: scale(0.5);
-  transform: scale(0.5);
-}
-
-.top-ttl2 span {
-  position: relative;
-  font-weight: normal;
-  text-align: center;
-  padding: 8px;
-  font-size: 1.7em;
-  color: #fff;
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  background: linear-gradient(transparent 40%, yellow 60%);
+  display: inline;
 }
 
 .top-ttl3 {
-  color: #fff;
   margin: 3rem auto 0 auto;
   font-size: 1.5rem;
   box-sizing: border-box;
-  padding: .3rem 1rem;
+  padding: 1rem 0 0 0;
   text-align: left;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.top-ttl3-sub {
+  font-size: 12px;
+  padding: 0 0 1rem 0;
+  letter-spacing: 5px;
+  text-align: center !important;
 }
 
 .top-ttl3 .top-ttl3-span {
@@ -741,6 +735,31 @@ form input[type='submit']:hover, form button:hover {
   margin-top: 2rem
 }
 
+.hyouka ol {
+  margin: 0 0 2rem 0;
+  list-style: decimal;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 1rem
+}
+
+.hyouka ol li {
+  margin: 0 1rem;
+  text-align: left;
+}
+
+@media screen and (max-width:767px) {
+  .hyouka ol {
+    width: 60%;
+    margin: 0 auto 2rem auto;
+  }
+
+  .hyouka ol li {
+    width: 100%;
+  }
+}
+
 .btn-arare {
   position: relative;
   text-align: center;
@@ -753,7 +772,7 @@ form input[type='submit']:hover, form button:hover {
   display: inline-block;
   vertical-align: baseline;
   padding: 15px 60px;
-  color: #414141 !important;
+  color: #fff !important;
   border-radius: 30px;
   line-height: 1;
 }
@@ -1555,8 +1574,6 @@ body.page .post-title {
 .side-widget ul li {
   overflow: hidden;
   padding: 15px 0;
-  vertical-align: top;
-  border-bottom: 1px solid #e5e5e5
 }
 
 .side-widget .side-title {
@@ -1715,6 +1732,8 @@ body.page .post-title {
 .lp-list .studio-cap {
   position: relative;
   margin: 2.5rem auto 2rem auto;
+  padding: 2rem;
+  border: 1px solid #eee
 }
 
 .lp-list .studio-cap h2 {
@@ -1723,6 +1742,7 @@ body.page .post-title {
   color: #414141;
   padding-bottom: 1rem;
   margin: 0 auto 1.5rem;
+  border-bottom: 1px solid #eee
 }
 
 .lp-list .studio-cap p:last-of-type {
@@ -1762,7 +1782,14 @@ body.page .post-title {
   display: block;
   text-align: left;
   position: relative;
-  margin: 2.5rem auto 2rem auto;
+  margin: 1rem auto 2rem auto;
+}
+
+.point_txt {
+  display: inline;
+  margin-right: 1rem;
+  background: linear-gradient(transparent 40%, yellow 60%);
+  font-weight: bold;
 }
 
 .studio-point-list {
@@ -1789,16 +1816,12 @@ body.page .post-title {
 
 .pop-list .post-thumbnail {
   position: relative;
-  width: 106.6px;
-  height: 80px;
-  float: left;
+  width: 100%;
+  height: 110px;
 }
 
 .pop-list .bx-caption {
-  float: left;
-  position: relative;
-  width: 61.78%;
-  margin-left: 10px;
+  width: 100%;
 }
 
 .pop-list .bx-caption .ttl-main {
@@ -2420,7 +2443,6 @@ div.post-share-fb .fbcomments, div.post-share-fb .fb_iframe_widget, div.post-sha
   }
 
   #header {
-    height: 55px;
     padding: 0
   }
 
@@ -2662,8 +2684,15 @@ div.post-share-fb .fbcomments, div.post-share-fb .fb_iframe_widget, div.post-sha
 }
 
 #main_posts {
-  height: 50vh;
+  height: 300px;
+  width: 100%;
   position: relative
+}
+
+#main_posts img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 #main_posts a {
@@ -2777,9 +2806,11 @@ div.post-share-fb .fbcomments, div.post-share-fb .fb_iframe_widget, div.post-sha
 
 .side-widget .side-title {
   padding: 0 0 5px;
-  font-size: 1.15em !important;
+  font-size: 1em !important;
   font-weight: bold !important;
-  text-align: left
+  text-align: left;
+  color: #fff;
+  padding: 9px 17px;
 }
 
 .posts-list {

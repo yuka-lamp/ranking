@@ -3,7 +3,8 @@
 <div class="side-widget-area">
 
 <div id="views-2" class="widget_views side-widget">
-<div class="side-widget-inner"><h4 class="side-title"><span class="side-title-inner">人気のチャットレディBEST10</span></h4>
+<div class="side-widget-inner">
+<h4 class="side-title"><?php echo get_field('ttl_side',265);?></h4>
 <ul class="postviews">
 <?php
 $args = array('post_type' => 'lp','orderby' => 'date', 'order' => 'ASC');

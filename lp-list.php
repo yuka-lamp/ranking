@@ -21,9 +21,9 @@ $graf = get_field('graf');
 </a>
 <div class="studio-cap"><?php echo $intro; ?></div>
 <div class="studio-point">
-<?php if (get_field('point-1')) echo '<div class="studio-point-list"><img src="'.get_template_directory_uri().'/lib/images/arare/good.png" alt="花魁体験Point">'.get_field('point-1').'</div>'; ?>
-<?php if (get_field('point-2')) echo '<div class="studio-point-list"><img src="'.get_template_directory_uri().'/lib/images/arare/good.png" alt="花魁体験Point">'.get_field('point-2').'</div>'; ?>
-<?php if (get_field('point-3')) echo '<div class="studio-point-list"><img src="'.get_template_directory_uri().'/lib/images/arare/good.png" alt="花魁体験Point">'.get_field('point-3').'</div>'; ?>
+<?php if (get_field('point-1')) echo '<div class="studio-point-list"><p class="point_txt">POINT</p>'.get_field('point-1').'</div>'; ?>
+<?php if (get_field('point-2')) echo '<div class="studio-point-list"><p class="point_txt">POINT</p>'.get_field('point-2').'</div>'; ?>
+<?php if (get_field('point-3')) echo '<div class="studio-point-list"><p class="point_txt">POINT</p>'.get_field('point-3').'</div>'; ?>
 </div>
 <div class="btn-arare">
 <a href="<?php the_permalink(); ?>">サイト詳細をみる</a>
