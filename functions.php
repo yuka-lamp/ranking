@@ -27,15 +27,6 @@ function theme_customizer_extension($wp_customize) {
  'settings' => 'color_main',
  'priority' => 20,
   )));
-  $wp_customize->add_setting( 'color_sub', array(
- 'default' => 'red',
-  ));
-  $wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'color_sub', array(
- 'label' => 'サブカラー',
- 'section' => 'colors',
- 'settings' => 'color_sub',
- 'priority' => 20,
-  )));
   $wp_customize->add_setting( 'color_bg', array(
  'default' => 'red',
   ));

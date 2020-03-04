@@ -42,30 +42,32 @@ $freedom = get_field('freedom');
 <h3 class="top-ttl3">Eevaluation</h3>
 <p class="top-ttl3-sub">評価</p>
 </div>
-
+<div class="score-wrap">
+<p class="score"><?php echo get_field('score_all');?><span>点</span></p>
+</div>
 <div class="">
-  <table>
-    <tr>
-      <th><?php echo get_field('evaluation_01',120);?></th>
-      <td><?php echo get_field('score1');?></td>
-    </tr>
-    <tr>
-      <th><?php echo get_field('evaluation_02',120);?></th>
-      <td><?php echo get_field('score2');?></td>
-    </tr>
-    <tr>
-      <th><?php echo get_field('evaluation_03',120);?></th>
-      <td><?php echo get_field('score3');?></td>
-    </tr>
-    <tr>
-      <th><?php echo get_field('evaluation_04',120);?></th>
-      <td><?php echo get_field('score4');?></td>
-    </tr>
-    <tr>
-      <th><?php echo get_field('evaluation_05',120);?></th>
-      <td><?php echo get_field('score5');?></td>
-    </tr>
-  </table>
+<table>
+<tr>
+<th><?php echo get_field('evaluation_01',120);?></th>
+<td><?php echo get_field('score1');?></td>
+</tr>
+<tr>
+<th><?php echo get_field('evaluation_02',120);?></th>
+<td><?php echo get_field('score2');?></td>
+</tr>
+<tr>
+<th><?php echo get_field('evaluation_03',120);?></th>
+<td><?php echo get_field('score3');?></td>
+</tr>
+<tr>
+<th><?php echo get_field('evaluation_04',120);?></th>
+<td><?php echo get_field('score4');?></td>
+</tr>
+<tr>
+<th><?php echo get_field('evaluation_05',120);?></th>
+<td><?php echo get_field('score5');?></td>
+</tr>
+</table>
 </div>
 
 <div class="hyouka"><?php echo $intro; ?></div>
@@ -83,7 +85,7 @@ if(is_active_sidebar('under_post_area')){ ?>
 $logo_image = get_option('logo_image');
 $avatar = get_user_meta($post->post_author, 'original_avatar', true);
 if ($avatar == '') {
-  $avatar = get_template_directory_uri().'/lib/images/user.png';
+$avatar = get_template_directory_uri().'/lib/images/user.png';
 } ?>
 <!-- <section class="publisher" itemprop="publisher" itemscope itemtype="https://schema.org/Organization">
 <h2 class="ttl-02">サイト運営者</h2>
@@ -101,7 +103,7 @@ else: ?>
 <p>投稿が見つかりません。</p>
 <?php endif; ?>
 <div class="posts-list pa30">
-<h2 class="ttl-02">他のチャットレディ求人サイト</h2>
+<h2 class="ttl-02"><?php echo get_field('single_ttl',265);?></h2>
 <?php include_once('related-entries.php'); ?>
 </div>
 </div><!-- /main-inner -->

@@ -2,7 +2,7 @@
 <html lang="ja" prefix="og: http://ogp.me/ns#">
 <head>
 <meta charset="UTF-8">
-<title><?php lamp_title(); ?></title>
+<title<?php bloginfo( 'name' ); ?></title>
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
 <link href="https://fonts.googleapis.com/css?family=Kosugi+Maru|M+PLUS+Rounded+1c:400,700&display=swap" rel="stylesheet">
 <?php wp_head(); ?>
@@ -30,6 +30,15 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
   gtag('config', 'UA-131209403-2');
 </script>
+<style>
+  .top-ttl-wrap, .footer-01 {background: <?php echo get_theme_mod( 'color_bg', '#000'); ?>;}
+  .side-widget .side-title, .top-ttl2 span, .post-content h2, .btn-arare a, #gnav-ul {background: <?php echo get_theme_mod( 'color_main', '#000'); ?>;}
+  #header {border-top: solid 3px <?php echo get_theme_mod( 'color_main', '#000'); ?>;}
+  #header #logo h1 span  {color: <?php echo get_theme_mod( 'color_main', '#000'); ?>;}
+  .post-content h4 {border-left: 2px solid <?php echo get_theme_mod( 'color_main', '#000'); ?>;}
+  .post-content h3 {border-bottom: dotted 2px <?php echo get_theme_mod( 'color_main', '#000'); ?>;}
+</style>
+
 </head>
 <body <?php body_class();?> itemschope="itemscope" itemtype="http://schema.org/WebPage">
 <!-- Google Tag Manager (noscript) -->
@@ -56,7 +65,7 @@ lamp_show_facebook_block(); ?>
 $logo_image = get_option('logo_image');
 $logo_inner = '<img src="'. get_option('logo_image') .'" alt="チャットレディ求人ランキング">'; ?>
 <div id="logo" itemprop="headline">
-<h1><a href="<?php echo home_url(); ?>"><div class="pc"><span>＼</span>安全に稼げる！<span>／</span><br>「<span>大阪の人気チャットレディ求人</span>」ランキング</div><div class="sp">大阪の人気チャットレディ求人</div></a></h1>
+<h1><a href="<?php echo home_url(); ?>"><?php bloginfo( 'name' ); ?></a></h1>
 </div>
 <div id="header-right" class="clearfix">
 <?php if (has_nav_menu('footer_nav')) { ?>

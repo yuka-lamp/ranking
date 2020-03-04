@@ -48,7 +48,7 @@ array(
 
 <div class="footer-02">
 <div class="inline"><p class="footer-copy">
-© Copyright <?php echo date('Y'); ?> <a href="http://kyoto-oiran.net/">大阪のチャットレディ求人人気ランキング</a>. All rights reserved.
+© Copyright <?php echo date('Y'); ?> <a href="http://kyoto-oiran.net/"><?php bloginfo( 'name' ); ?></a>. All rights reserved.
 </p></div>
 <!-- <div id="footer-cont-sns">
 <?php footer_social_buttons(); ?>

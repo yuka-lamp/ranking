@@ -8,9 +8,10 @@ Template Name: 評価基準
 <div id="main">
 <div class="main-inner">
 <section id="point">
-<h2 class="top-ttl3">Eevaluation</h2>
-<p class="top-ttl3-sub">評価基準</p>
-<p><img src="<?php echo get_template_directory_uri(); ?>/lib/images/arare/graf-root.png" alt="グラフ"></p>
+<div class="top-ttl-wrap">
+  <h3 class="top-ttl3">Eevaluation</h3>
+  <p class="top-ttl3-sub">評価基準</p>
+</div>
 <div class="point-list">
 <table>
 <tbody>

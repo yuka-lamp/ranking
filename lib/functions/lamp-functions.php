@@ -61,7 +61,7 @@ if (!function_exists('lamp_breadcrumb')) {
         global $post;
         $post_type = get_post_type($post);
         $bc  = '<ol class="breadcrumb clearfix">';
-        $bc .= '<li itemscope="itemscope" itemtype="http://data-vocabulary.org/Breadcrumb"><a href="'.home_url().'" itemprop="url"><i class="fa fa-home"></i> <span itemprop="title">京都のチャットレディランキング</span></a> / </li>';
+        $bc .= '<li itemscope="itemscope" itemtype="http://data-vocabulary.org/Breadcrumb"><a href="'.home_url().'" itemprop="url"><i class="fa fa-home"></i> <span itemprop="title">神戸のチャットレディランキング</span></a> / </li>';
         if (is_home()) {
             $bc .= '<li><i class="fa fa-list-alt"></i> 最新記事一覧</li>';
         } elseif (is_search()) {
